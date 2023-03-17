@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Inobitec Java junior position test application</title>
+    <!--Styles-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Treetable-->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.treetable.css"
+          th:href="@{/css/jquery.treetable.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.treetable.theme.default.css"
+          th:href="@{/css/jquery.treetable.theme.default.css}"/>
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" th:href="@{/css/main.css}"/>
+    <!--Scripts-->
+    <!--jQuery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <!--Treetable-->
+    <script type="text/javascript" th:src="@{/js/jquery.treetable.js}" src="/js/jquery.treetable.js"></script>
+    <!--Custom-->
+    <script type="text/javascript" th:src="@{/js/main.js}"></script>
+</head>
+<body>
+<div class="comments">
+    <h1>Comments tree</h1>
+    <form class="addRootCommentForm" id="addRootCommentForm" action="">
+        <div class="addRootCommentForm_container">
+            <label for="comment-field">Add a new comment:</label>
+            <textarea rows="5" cols="40" id="comment-field" class="comment-textarea" placeholder="Text..."></textarea>
+        </div>
+        <input type="submit" value="Comment" id="addRootCommentForm_submitButton" class="addNewComment btn btn-primary">
+    </form>
+    <div class="comments-container">
+        <table id="comments-tree">
+            <tbody id="comments-tree_body"></tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

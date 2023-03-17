@@ -1,0 +1,59 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#007bff;
+}
+
+.comments {
+    padding: 20px;
+}
+
+.addRootCommentForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: calc(1140px - 3em);
+    width: 100%;
+    margin: auto;
+}
+
+.addRootCommentForm_container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addRootCommentForm #comment-field {
+    border-radius: .25rem;
+}
+
+.addRootCommentForm #addRootCommentForm_submitButton {
+
+}
+
+.comment-actions {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 1fr max-content max-content;
+    grid-gap: 10px;
+    padding: 10px 0;
+}
+
+.comment-actions_comment-field {
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.comment-actions .btn {
+    display: flex;
+    align-items: center;
+}
+
+.comment-actions .btn svg{
+    margin-right: 5px;
+}
